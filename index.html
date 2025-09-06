@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="WDD 231 - Web Frontend Develeopment I - Aneesa Wangui Wariara. Here's a little about me.">
+    <meta name="author" content="Aneesa Wangui Wariara">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/home.js" defer></script>
+
+    <title>WDD 231 - Web Frontend Develeopment I - Aneesa Wangui Wariara</title>
+
 </head>
+
 <body>
-    
+    <header>
+        <div class="branding">
+            <img src="images/logo.png" alt="Website Logo">
+            <span id="course-title">WDD 231 - Web Frontend Develeopment I</span>
+        </div>
+        
+        <button type="button" id="menu" aria-label="Toggle Menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#/">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class = "card-group">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="intro">
+                    <p>My name is Aneesa Wariara. I was born in Nairobi, Kenya and still reside there. I am currently a
+                        Software Development student at BYU-I. I love spending time with my friends and family and I enjoy
+                        reading and singing.</p>
+                </div>
+            
+            
+            </section>
+            <section class="card">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="Hello, my name is Aneesa Wangui Wariara" width="200" loading="lazy">
+            </section>
+        </div>
+        
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+
+
+        </section>
+    </main>
+    <div class="social-links">
+        <a href="https://github.com/aneesawariara" target="_blank" aria-label="GitHub">
+            <img src="images/github.svg" alt="Github Icon">
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn Icon">
+        </a>
+        <a href="https://x.com/X." target="_blank" aria-label="Twitter">
+            <img src="images/x.svg" alt="Twitter Icon">
+        </a>
+
+    </div>
+    <footer>
+        <p>© <span id="currentyear"></span> 🌟 Aneesa Wangui Wariara 🌟 Kenya</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
+
 </html>
