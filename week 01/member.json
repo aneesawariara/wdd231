@@ -1,0 +1,23 @@
+{
+    "lastName" : "Wariara",
+    "moveInDate" : "9/3/2025",
+    "familyNumber" : 3,
+    "isVisitedByBishopric" : false,
+    "member" : [
+        {
+            "name" : "Meadow",
+            "gender" : "female",
+            "birthdate" : "3/4/2003"
+        },
+        {
+            "name": "Melody",
+            "gender": "female",
+            "birthdate": "9/4/2005"
+        },
+        {
+            "name": "Mona",
+            "gender": "female",
+            "birthdate": "1/4/1980"
+        }
+    ]
+}
