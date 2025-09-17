@@ -1,0 +1,64 @@
+[
+    {
+        "name":"Savannah Tech Hub",
+        "address":"1 Silicon Valley, Westlands, Nairobi",
+        "phone":"+254 110 345654",
+        "website":"https://savannahtech.co.ke",
+        "image":"https://placehold.co/250x250/E5D1A4/480903?text=Nairobi+Chamber",
+        "membershiplevel":"3"
+    },
+
+    {
+        "name": "Karura Coffee Roasters",
+        "address": "12 Forest Lane, Gigiri, Nairobi",
+        "phone": "+254 722 987654",
+        "website": "https://karuracoffee.co.ke",
+        "image": "https://placehold.co/250x250/E5D1A4/480903?text=Nairobi+Chamber",
+        "membershiplevel": "2"
+    },
+
+    {
+        "name": "Nairobi Wellness Studio",
+        "address": "45 Health Street, Kilimani, Nairobi",
+        "phone": "+254 733 456789",
+        "website": "https://naiwellness.co.ke",
+        "image": "https://placehold.co/250x250/E5D1A4/480903?text=Nairobi+Chamber",
+        "membershiplevel": "2"
+    },
+
+    {
+        "name": "Maasai Market Collective",
+        "address": "78 Artisan Road, CBD, Nairobi",
+        "phone": "+254 701 654321",
+        "website": "https://maasaimarket.co.ke",
+        "image": "https://placehold.co/250x250/E5D1A4/480903?text=Nairobi+Chamber",
+        "membershiplevel": "1"
+    },
+
+    {
+        "name": "GreenGrid Solar Solutions",
+        "address": "23 Energy Crescent, Industrial Area, Nairobi",
+        "phone": "+254 720 112233",
+        "website": "https://greengridsolar.co.ke",
+        "image": "https://placehold.co/250x250/E5D1A4/480903?text=Nairobi+Chamber",
+        "membershiplevel": "3"
+    },
+
+    {
+        "name": "Nairobi Creatives Studio",
+        "address": "9 Design Drive, Lavington, Nairobi",
+        "phone": "+254 734 998877",
+        "website": "https://nairobicreatives.co.ke",
+        "image": "https://placehold.co/250x250/E5D1A4/480903?text=Nairobi+Chamber",
+        "membershiplevel": "2"
+    },
+
+    {
+        "name": "AfriFarm Organics",
+        "address": "67 Agro Lane, Karen, Nairobi",
+        "phone": "+254 735 223344",
+        "website": "https://afrifarm.co.ke",
+        "image": "https://placehold.co/250x250/E5D1A4/480903?text=Nairobi+Chamber",
+        "membershiplevel": "2"
+    }
+]
