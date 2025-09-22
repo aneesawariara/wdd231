@@ -8,7 +8,7 @@ hamButton.addEventListener('click', () => {
 
 });
 
-// Fetch and display member data
+// Fetch and display member data Directory Page
 const container = document.getElementById('members-container');
 
 async function loadMembers() {
@@ -20,12 +20,9 @@ async function loadMembers() {
             const card = document.createElement('section');
             card.classList.add('member-card');
             
-            const imageSrc = member.image.startsWith('http')
-                ? member.image
-                : `images/${member.image}`;
-
+            const imageSrc = member.image;
             card.innerHTML = `
-            <img src="${imageSrc}  alt="${member.name} logo" loading="lazy">
+            <img src="${imageSrc}"  alt="${member.name} logo" loading="lazy">
             <h3>${member.name}</h3>
             <p><strong>Address: </strong>${member.address}</p>
             <p><strong>Phone: </strong>${member.phone}</p>
@@ -59,6 +56,7 @@ listBtn.addEventListener('click', () => {
 });
 
 
+// home page js
 
 
 //date and last modified

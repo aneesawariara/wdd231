@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory page for the Chamber of Commerce in Nairobi" />
+    <meta name="author" content="Aneesa Wangui Wariara" />
+    <!-- Facebook Open Graph Meta -->
+    <meta property="og:title" content="Chamber of Commerce Directory" />
+    <meta property="og:description" content="Explore local businesses and members of the Chamber of Commerce." />
+    <meta property="og:image" content="https://aneesawariara.github.io/wdd231/chamber/images/og-image.jpg" />
+    <meta property="og:url" content="https://aneesawariara.github.io/wdd231/chamber/directory.html" />
+    <title>Chamber of Commerce Directory Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/chamber.css" />
+    <script src="scripts/chamber.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/logo.png" alt="Website Logo">
+            <span id="page-title">Nairobi Chamber of Commerce</span>
+        </div>
+        <button type="button" id="menu" aria-label="Toggle Menu"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero>">
+            <img src="images/hero-image.webp" alt="Nairobi City Skyline">
+            <a href="join.html" class="cta-button">Join the Chamber!</a>
+        </section>
+        <h1>Home</h1>
+        <section class="highlights">
+            <!-- Events -->
+            <div class="events">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>Business Networking Breakfast – Oct 10</li>
+                    <li>Local Market Day – Oct 15</li>
+                </ul>
+            </div>
+        
+            <!-- Current Weather -->
+            <div class="current-weather">
+                <h2>Current Weather</h2>
+                <p>Temperature: <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption id="weather-desc"></figcaption>
+                </figure>
+            </div>
+        
+            <!-- Weather Forecast -->
+            <div class="forecast">
+                <h2>3-Day Forecast</h2>
+                <div id="forecast-container">
+                    <!-- JS will inject forecast cards here -->
+                </div>
+            </div>
+        </section>
+        <!--Business Spotlight-->
+        <section class="spotlight">
+            <h2>Businees Spotlight</h2>
+            <div class="spotlight-container">
+                <!--Cards Injected by JavaScript-->
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <p><strong>Contact Us</strong></p>
+                <p>Email: info@nairobichamber.co.ke</p>
+                <p>Phone: +254 700 111222</p>
+                <p>Address: Tom Mboya Street, CBD, Nairobi</p>
+            </div>
+            <div class="social-links">
+                <p><strong>Follow Us</strong></p>
+                <a href="https://yotutube.com" target="_blank" aria-label="YouTube">
+                    <img src="images/youtube.svg" alt="YouTube Icon">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="images/twitter.svg" alt="Twitter Icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn Icon">
+                </a>
+            </div>
+            <div class="footer-meta">
+                <p>© <span id="currentyear"></span> 🌟 Aneesa Wangui Wariara 🌟 Kenya</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
