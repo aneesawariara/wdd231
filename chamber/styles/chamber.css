@@ -73,6 +73,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
+h1{
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 800;
+}
 /* ====== View Toggle Buttons ====== */
 .view-toggle {
     display: flex;
