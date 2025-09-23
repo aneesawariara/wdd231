@@ -18,7 +18,7 @@
         rel="stylesheet">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles/chamber.css" />
-    <script src="scripts/chamber.js" defer></script>
+    <script type="module" src="scripts/chamber.js"></script>
 
 </head>
 
@@ -40,7 +40,7 @@
         </nav>
     </header>
     <main>
-        <section class="hero>">
+        <section class="hero">
             <img src="images/hero-image.webp" alt="Nairobi City Skyline">
             <a href="join.html" class="cta-button">Join the Chamber!</a>
         </section>
@@ -59,6 +59,10 @@
             <div class="current-weather">
                 <h2>Current Weather</h2>
                 <p>Temperature: <span id="current-temp"></span></p>
+                <p id="high-low"></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Sunrise: <span id="sunrise"></span></p>
+                <p>Sunset: <span id="sunset"></span></p>
                 <figure>
                     <img id="weather-icon" src="" alt="">
                     <figcaption id="weather-desc"></figcaption>
@@ -75,7 +79,7 @@
         </section>
         <!--Business Spotlight-->
         <section class="spotlight">
-            <h2>Businees Spotlight</h2>
+            <h2>Business Spotlight</h2>
             <div class="spotlight-container">
                 <!--Cards Injected by JavaScript-->
             </div>

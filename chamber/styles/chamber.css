@@ -175,6 +175,98 @@ h1{
 }
 /*Home page*/
 
+/* Shared box style */
+/* Fix typo in HTML: class="hero" (remove >) */
+.hero {
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cta-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:hover {
+    filter: brightness(1.05);
+}
+.highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.events, .current-weather, .forecast, .spotlight {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Headings */
+.events h2, .current-weather h2, .forecast h2, .spotlight h2 {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+}
+
+/* Lists */
+.events ul, #forecast-container {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Forecast lines */
+#forecast-container p {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 0.3rem 0;
+    margin: 0;
+}
+
+/* Spotlight cards */
+.spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.spotlight-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+
+.spotlight-card img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
 
 /* ====== Footer ====== */
 footer {
@@ -269,5 +361,9 @@ footer {
     .branding {
         flex-direction: column;
         align-items: flex-start;
+    }
+    .highlights {
+        grid-template-columns: 1fr;
+            
     }
 }

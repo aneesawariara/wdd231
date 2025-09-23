@@ -2,6 +2,7 @@
     {
         "name":"Savanna Tech Hub",
         "address":"1 Silicon Valley, Westlands, Nairobi",
+        "tagline": "Innovating Africa's digital future.",
         "phone":"+254 110 345654",
         "website":"https://savannahtech.co.ke",
         "image":"images/savanna-tech-logo.jpg",
@@ -11,6 +12,7 @@
     {
         "name": "Karura Coffee Roasters",
         "address": "12 Forest Lane, Gigiri, Nairobi",
+        "tagline":"From forest to cup, roasted with care.",
         "phone": "+254 722 987654",
         "website": "https://karuracoffee.co.ke",
         "image": "images/karura-coffee-logo.jpg",
@@ -20,6 +22,7 @@
     {
         "name": "Nairobi Wellness Studio",
         "address": "45 Health Street, Kilimani, Nairobi",
+        "tagline":"Balance your body, refresh your mind.",
         "phone": "+254 733 456789",
         "website": "https://naiwellness.co.ke",
         "image": "images/nairobi-wellness-logo.jpg",
@@ -29,6 +32,7 @@
     {
         "name": "Maasai Market Collective",
         "address": "78 Artisan Road, CBD, Nairobi",
+        "tagline":"Celebrating culture, empowering artisans.",
         "phone": "+254 701 654321",
         "website": "https://maasaimarket.co.ke",
         "image": "images/maasai-market-logo.jpg",
@@ -38,6 +42,7 @@
     {
         "name": "GreenGrid Solar Solutions",
         "address": "23 Energy Crescent, Industrial Area, Nairobi",
+        "tagline":"Powering Nairobi sustainably, one panel at a time.",
         "phone": "+254 720 112233",
         "website": "https://greengridsolar.co.ke",
         "image": "images/greengrid-solar-logo.jpg",
@@ -47,6 +52,7 @@
     {
         "name": "Nairobi Creatives Studio",
         "address": "9 Design Drive, Lavington, Nairobi",
+        "tagline":"Designing bold ideas into reality.",
         "phone": "+254 734 998877",
         "website": "https://nairobicreatives.co.ke",
         "image": "images/nairobi-creatives-logo.jpg",
@@ -56,6 +62,7 @@
     {
         "name": "AfriFarm Organics",
         "address": "67 Agro Lane, Karen, Nairobi",
+        "tagline":"Healthy soil, healthy harvests, healthy lives.",
         "phone": "+254 735 223344",
         "website": "https://afrifarm.co.ke",
         "image": "images/afrifarm-organics-logo.jpg",

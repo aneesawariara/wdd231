@@ -1,3 +1,6 @@
+import { loadMembers, setupDirectoryToggle } from './directory.mjs';
+import { loadWeather, loadSpotlight } from './home.mjs';
+
 //hamburger menu
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
@@ -8,55 +11,21 @@ hamButton.addEventListener('click', () => {
 
 });
 
-// Fetch and display member data Directory Page
-const container = document.getElementById('members-container');
-
-async function loadMembers() {
-    try {
-        const response = await fetch('data/members.json');
-        const members = await response.json();
-
-        members.forEach(member => {
-            const card = document.createElement('section');
-            card.classList.add('member-card');
-            
-            const imageSrc = member.image;
-            card.innerHTML = `
-            <img src="${imageSrc}"  alt="${member.name} logo" loading="lazy">
-            <h3>${member.name}</h3>
-            <p><strong>Address: </strong>${member.address}</p>
-            <p><strong>Phone: </strong>${member.phone}</p>
-            <p><strong>Membership Level: </strong>${member.membershiplevel}</p>
-            <a href="${member.website}" target="_blank">Visit Website</a>
-            `;
-            
-            container.appendChild(card);
-        });
+document.addEventListener("DOMContentLoaded", () => {
+    if (document.getElementById("members-container")) {
+        loadMembers();
+        setupDirectoryToggle();
     }
-    catch (error){
-        console.error('Error loadingmember data:', error);
-        container.innerHTML = '<p>Unable to load member data at this time</p>';
+    if (document.querySelector(".current-weather")) {
+        loadWeather();
     }
-}
-
-loadMembers();
-
-//Toggle between list and grid views
-const gridBtn = document.getElementById('grid-view');
-const listBtn = document.getElementById('list-view');
-
-gridBtn.addEventListener('click', () => {
-    container.classList.add('grid-view');
-    container.classList.remove('list-view');
-});
-
-listBtn.addEventListener('click', () => {
-    container.classList.add('list-view');
-    container.classList.remove('grid-view');
+    if (document.querySelector(".spotlight-container")) {
+        loadSpotlight();
+    }
 });
 
 
-// home page js
+
 
 
 //date and last modified
