@@ -1,0 +1,64 @@
+:root {
+    --accent-color: #556B2F;
+    --bg-color: #114411;
+    --heading-font: 'Shadow Into Light', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    
+}
+
+header, footer{
+    background-color: var(--bg-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1{
+    font-family: 'Shadows Into Light';
+    color: #fff;
+}
+
+h2,
+h3 {
+    font-family: 'Shadows Into Light';
+    color: var(--accent-color);
+    margin-bottom: 0.5rem
+}
+
+section {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #eee;
+    
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+
+.color-sample {
+    display: flex;
+    gap: 1rem;
+}
+
+.color-sample div {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+}
+
+.color1 {
+    background-color: var(--accent-color);
+}
+
+.color2 {
+    background-color: var(--bg-color);
+}
