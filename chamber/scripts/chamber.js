@@ -2,6 +2,8 @@ import { loadMembers, setupDirectoryToggle } from './directory.mjs';
 import { loadWeather, loadSpotlight } from './home.mjs';
 
 import { setTimestamp, initModalOpeners, initModalClosers, displaySubmittedData } from './join.mjs';
+import { initDiscoverPage } from './discover.mjs';
+
 //hamburger menu
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
@@ -37,6 +39,13 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     if (window.location.pathname.includes("thankyou.html")) {
         displaySubmittedData();
+    }
+});
+
+// Discover Page event listener
+document.addEventListener("DOMContentLoaded", () => {
+    if (window.location.pathname.includes("discover.html")) {
+        initDiscoverPage();
     }
 });
 

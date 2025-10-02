@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Nairobi National Park",
+        "address": "Langata Rd, Nairobi",
+        "description": "A unique wildlife park just outside the city, home to lions, giraffes, and rhinos.",
+        "image": "images/nairobi-national-park.webp"
+    },
+    {
+        "name": "Karen Blixen Museum",
+        "address": "Karen Rd, Nairobi",
+        "description": "Former home of the famous author of 'Out of Africa', now a museum showcasing colonial history.",
+        "image": "images/karen-blixen-museum.webp"
+    },
+    {
+        "name": "Giraffe Centre",
+        "address": "Duma Rd, Nairobi",
+        "description": "A conservation center where visitors can feed endangered Rothschild giraffes.",
+        "image": "images/giraffe-centre.webp"
+    },
+    {
+        "name": "Nairobi Railway Museum",
+        "address": "Station Rd, Nairobi",
+        "description": "A tribute to Kenya's railway history with vintage locomotives and colonial-era artifacts.",
+        "image": "images/nairobi-railway-museum.webp"
+    },
+    {
+        "name": "Bomas of Kenya",
+        "address": "Langata Rd, Nairobi",
+        "description": "A cultural center showcasing traditional Kenyan villages, music, and dance.",
+        "image": "images/bomas-of-kenya.webp"
+    },
+    {
+        "name": "Uhuru Park",
+        "address": "Kenyatta Ave, Nairobi",
+        "description": "A popular urban park offering green space, paddle boats, and city views.",
+        "image": "images/uhuru-park.webp"
+    },
+    {
+        "name": "Nairobi Gallery",
+        "address": "Kenyatta Ave, Nairobi",
+        "description": "An art museum housed in a historic building, featuring contemporary Kenyan artists.",
+        "image": "images/nairobi-gallery.webp"
+    },
+    {
+        "name": "Maasai Market",
+        "address": "Various locations, Nairobi",
+        "description": "A vibrant open-air market offering handmade crafts, jewelry, and textiles.",
+        "image": "images/maasai-market.webp"
+    }
+]

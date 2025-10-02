@@ -437,7 +437,114 @@ dialog.membershipModal {
     }
 }
 
+/*Discover Page */
 
+#visit-message {
+    background-color: #e0f7fa;
+    border-left: 4px solid var(--secondary-color);
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.grid-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.card h2 {
+    margin-top: 0.5rem;
+    color: var(--primary-color);
+}
+
+.card address {
+    font-style: normal;
+    color: var(--text-color);
+    margin: 0.5rem 0;
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
+
+.card button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.card button:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+@media (min-width: 641px) {
+    .grid-container {
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card1 {grid-area: card1;}
+    .card2 {grid-area: card2;}
+    .card3 {grid-area: card3;}
+    .card4 {grid-area: card4;}
+    .card5 {grid-area: card5;}
+    .card6 {grid-area: card6;}
+    .card7 {grid-area: card7;}
+    .card8 {grid-area: card8;}
+
+    .card img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+        transition: all 0.3s ease;
+    }
+}
+@media (min-width: 1025px) {
+    .grid-container {
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card1 { grid-area: card1;}
+    .card2 {grid-area: card2;}
+    .card3 {grid-area: card3;}
+    .card4 {grid-area: card4;}
+    .card5 {grid-area: card5;}
+    .card6 {grid-area: card6;}
+    .card7 {grid-area: card7;}
+    .card8 {grid-area: card8;}
+    
+    .card img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+        transition: all 0.3s ease;
+    }
+}
 /* ====== Footer ====== */
 footer {
     background-color: var(--primary-color);
