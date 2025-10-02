@@ -117,12 +117,17 @@ function displayCourses(filter) {
     courseList.innerHTML = "";
 
     filtered.forEach(course => {
+        
         const card = document.createElement("div");
         card.classList.add("course-card");
         const courseTitle = course.completed ? `✅ ${course.subject} ${course.number} ` : course.subject;
 
         card.innerHTML = `<p>${courseTitle}</p>`;
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
         courseList.appendChild(card);
+        
     });
 
     const oldList = courseSection.querySelector(".course-list");
@@ -138,10 +143,30 @@ function displayCourses(filter) {
     }
 
     creditDisplay.textContent = `The total credits for course listed is ${totalCredits}`;
-    
 }
 
 displayCourses("All");
+
+function displayCourseDetails(course) {
+    const courseDetails = document.querySelector("#course-details");
+    
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(',')}</p>
+    `;
+    courseDetails.showModal();
+    
+
+    closeModal.addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+
 
 //date and last modified
 const yearSpan = document.querySelector("#currentyear");
