@@ -1,0 +1,269 @@
+:root{
+    --primary-color: #283618;
+    --secondary-color: #606C38;
+    --accent-color1: #DDA15E;
+    --accent-color2: #BC6C25;
+    --bg-color: #FEFAE0;
+    --heading-font: 'Shadows Into Light', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+    --text-color: #333;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    text-align: center;
+    padding: 1rem;
+}
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.branding img {
+    height: 60px;
+    margin-right: 1rem;
+}
+
+#page-title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: var(--heading-font);
+}
+
+#menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--accent-color1);
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--heading-font);
+}
+/*Carousel Track*/
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    max-width: 100%;
+
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.carousel-slide {
+    flex: 0 0 100vw;
+    /*scroll-snap-align: start;*/
+    height: auto;
+}
+
+.carousel-slide img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+/*Fact and Weather Section*/
+.fact-weather{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.fact-box p{
+    color: var(--color-text);
+}
+
+.fact-box, .current-weather,
+.forecast
+{
+    background: var(--bg-color);
+    border: 1px solid var(--accent-color2);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Headings */
+.fact-box h2,
+.current-weather h2,
+.forecast h2 {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    background-color: var(--bg-color);
+    padding: 0.5rem;
+}
+#forecast-container {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* Forecast lines */
+#forecast-container p {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--accent-color2);
+    padding: 0.3rem 0;
+    margin: 0;
+}
+/*========= Footer Container ========*/
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.social-links img {
+    width: 35px;
+    height: 35px;
+
+}
+
+.social-links svg {
+    fill: var(--accent-color);
+}
+
+.footer-container p,
+.footer-container a {
+    font-size: 0.9rem;
+}
+
+.footer-container a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:740px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #menu::before {
+        content: "☰";
+        color: var(--accent-color1);
+    }
+
+    #menu.open::before {
+        content: "🚪";
+        color: var(--color-primary);
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+
+    .navigation ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navigation a {
+        padding: 1rem;
+        text-align: center;
+        color: var(--color-accent);
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .navigation a:hover {
+        background-color: var(--color-primary);
+        color: var(--color-text);
+        font-weight: 700;
+    }
+
+    .branding {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .fact-weather{
+        display: flex;
+        flex-direction: column;
+    }
+    .fact-box, .current-weather, .forecast{
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "animal": "Elephant",
+    "fact": "Elephants communicate through ground vibrations."
+  },
+  {
+    "id": 2,
+    "animal": "Giraffe",
+    "fact": "Giraffes only need 5 to 30 minutes of sleep per day."
+  },
+  {
+    "id": 3,
+    "animal": "Cheetah",
+    "fact": "Cheetahs can accelerate from 0 to 60 mph in just 3 seconds."
+  },
+  {
+    "id": 4,
+    "animal": "Zebra",
+    "fact": "Zebras' stripes help deter biting flies."
+  },
+  {
+    "id": 5,
+    "animal": "Lion",
+    "fact": "Lions rest for up to 20 hours a day."
+  },
+  {
+    "id": 6,
+    "animal": "Giraffe",
+    "fact": "A giraffe's neck has the same number of vertebrae as a human's—just longer!"
+  },
+  {
+    "id": 7,
+    "animal": "Elephant",
+    "fact": "Elephants can detect water sources up to 12 miles away."
+  },
+  {
+    "id": 8,
+    "animal": "Lion",
+    "fact": "Lions rest for up to 20 hours a day to conserve energy for hunting."
+  },
+  {
+    "id": 9,
+    "animal": "Cheetah",
+    "fact": "The cheetah is the fastest land animal, reaching speeds of 70 mph."
+  },
+  {
+    "id": 10,
+    "animal": "Hippopotamus",
+    "fact": "Hippos secrete a natural sunscreen that protects their skin from the sun."
+  }
+]

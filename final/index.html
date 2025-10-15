@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is the homepage of the Wild About Kenya website. See the diversity of wildlife in some of the parks.">
+    <meta name="author" content="Aneesa Wangui Wariara">
+    <!-- Facebook Open Graph Meta -->
+    <meta property="og:title" content="Kenya Wildlife Explorer Home" />
+    <meta property="og:description" content="Explore local sights and parks in Nairobi." />
+    <meta property="og:image" content="https://aneesawariara.github.io/wdd231/final/images/og-discover.jpg" />
+    <meta property="og:url" content="https://aneesawariara.github.io/wdd231/final/index.html" />
+    <title>Wild About Kenya | Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/final.css">
+    <script type="module" src="scripts/final.js"></script>
+
+</head>
+
+<body>
+    <header>
+        
+        <div class="branding">
+            <img src="images/logo.png" alt="Website Logo">
+            <span id="page-title">Wild About Kenya</span>
+        </div>
+        <button type="button" id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="info.html">Parks</a></li>
+                <li><a href="tracker.html">Wildlife Tracker</a></li>
+
+
+            </ul>
+
+        </nav>
+
+    </header>
+    <main>
+        <section class="carousel" aria-label="Wildlife image scroller">
+            <h1>Explore the Wild</h1>
+            <button class="carousel-btn prev" aria-label="Previous image">❮</button>
+            <div class="carousel-track">
+                <picture class="carousel-slide">
+                    <source
+                        srcset="https://plus.unsplash.com/premium_photo-1661962656908-24102eafa8d4?w=800&auto=format&fit=crop&q=60"
+                        media="(max-width: 600px)">
+                    <source
+                        srcset="https://plus.unsplash.com/premium_photo-1661962656908-24102eafa8d4?w=1920&auto=format&fit=crop&q=60"
+                        media="(min-width: 601px)">
+                    <img src="https://plus.unsplash.com/premium_photo-1661962656908-24102eafa8d4?w=1200&auto=format&fit=crop&q=60"
+                        alt="Wildbeasts Crossing" loading="lazy" style="width: 100%; height: auto; object-fit: cover;">
+                </picture>
+                <picture class="carousel-slide">
+                    <source
+                        srcset="https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=800&auto=format&fit=crop&q=60"
+                        media="(max-width: 600px)">
+                    <source
+                        srcset="https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=1920&auto=format&fit=crop&q=60"
+                        media="(min-width: 601px)">
+                    <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=1200&auto=format&fit=crop&q=60"
+                        alt="Giraffe in the light of a sunset" loading="lazy"
+                        style="width: 100%; height: auto; object-fit: cover;">
+                </picture>
+                <picture class="carousel-slide">
+                    <source
+                        srcset="https://images.unsplash.com/photo-1535083628129-0dfb3dca2214?w=800&auto=format&fit=crop&q=60"
+                        media="(max-width: 600px)">
+                    <source
+                        srcset="https://images.unsplash.com/photo-1535083628129-0dfb3dca2214?w=1920&auto=format&fit=crop&q=60"
+                        media="(min-width: 601px)">
+                    <img src="https://images.unsplash.com/photo-1535083628129-0dfb3dca2214?w=1200&auto=format&fit=crop&q=60"
+                        alt="Leopard in the green grass" loading="lazy"
+                        style="width: 100%; height: auto; object-fit: cover;">
+                </picture>
+                <picture class="carousel-slide">
+                    <source
+                        srcset="https://images.unsplash.com/photo-1523715201095-8bc5927fa2bf?w=800&auto=format&fit=crop&q=60"
+                        media="(max-width: 600px)">
+                    <source
+                        srcset="https://images.unsplash.com/photo-1523715201095-8bc5927fa2bf?w=1920&auto=format&fit=crop&q=60"
+                        media="(min-width: 601px)">
+                    <img src="https://images.unsplash.com/photo-1523715201095-8bc5927fa2bf?w=1200&auto=format&fit=crop&q=60"
+                        alt="A water buffalo" loading="lazy" style="width: 100%; height: auto; object-fit: cover;">
+                </picture>
+                <picture class="carousel-slide">
+                    <source
+                        srcset="https://images.unsplash.com/photo-1644325535323-62fdfb4f2673?w=800&auto=format&fit=crop&q=60"
+                        media="(max-width: 600px)">
+                    <source
+                        srcset="https://images.unsplash.com/photo-1644325535323-62fdfb4f2673?w=1920&auto=format&fit=crop&q=60"
+                        media="(min-width: 601px)">
+                    <img src="https://images.unsplash.com/photo-1644325535323-62fdfb4f2673?w=1200&auto=format&fit=crop&q=60"
+                        alt="A couple of lions sitting in a field" loading="lazy"
+                        style="width: 100%; height: auto; object-fit: cover;">
+                </picture>
+
+                <picture class="carousel-slide">
+                    <source
+                        srcset="https://images.unsplash.com/photo-1535338134198-e28df7d54e3d?w=800&auto=format&fit=crop&q=60"
+                        media="(max-width: 600px)">
+                    <source
+                        srcset="https://images.unsplash.com/photo-1535338134198-e28df7d54e3d?w=1920&auto=format&fit=crop&q=60"
+                        media="(min-width: 601px)">
+                    <img src="https://images.unsplash.com/photo-1535338134198-e28df7d54e3d?w=1200&auto=format&fit=crop&q=60"
+                        alt=" A gray baby rhino " loading="lazy" style="width: 100%; height: auto; object-fit: cover;">
+                </picture>
+            </div>
+            <button class="carousel-btn next" aria-label="Next image">❯</button>
+
+        </section>
+
+
+        <section class="fact-weather">
+            <div class="fact-box">
+                <h2>🐘 Wildlife Fact of the Day</h2>
+                <p id="fact"></p>
+            </div>
+            <!-- Current Weather -->
+            <div class="current-weather">
+                <h2>Current Weather</h2>
+                <p>Temperature: <span id="current-temp"></span></p>
+                <p id="high-low"></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Sunrise: <span id="sunrise"></span></p>
+                <p>Sunset: <span id="sunset"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption id="weather-desc"></figcaption>
+                </figure>
+            </div>
+            
+            <!-- Weather Forecast -->
+            <div class="forecast">
+                <h2>3-Day Forecast</h2>
+                <div id="forecast-container">
+                    <!-- JS will inject forecast cards here -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <p><strong>Contact Us</strong></p>
+                <p>Email: info@wildaboutkenya.co.ke</p>
+                <p>Phone: +254 700 111222</p>
+                <p>Address: Tom Mboya Street, CBD, Nairobi</p>
+            </div>
+            <div class="social-links">
+                <p><strong>Follow Us</strong></p>
+                <a href="https://yotutube.com" target="_blank" aria-label="YouTube">
+                    <img src="images/youtube.svg" alt="YouTube Icon">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="images/twitter.svg" alt="Twitter Icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn Icon">
+                </a>
+            </div>
+            <div class="footer-meta">
+                <p>© <span id="currentyear"></span> 🐘 Wild About Kenya 🐘</p>
+                <p><a href="references.html" aria-label="References page">📎</a></p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
