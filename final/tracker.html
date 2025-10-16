@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is the tracker page of the Wild About Kenya website. Share with us the animals you've seen during your visits!">
+    <meta name="author" content="Aneesa Wangui Wariara">
+    <!-- Facebook Open Graph Meta -->
+    <meta property="og:title" content="Kenya Wildlife Explorer Tracker Page" />
+    <meta property="og:description" content="Share your experience with us! Tell us what animals you've spotted." />
+    <meta property="og:image" content="https://aneesawariara.github.io/wdd231/final/images/og-tracker.jpg" />
+    <meta property="og:url" content="https://aneesawariara.github.io/wdd231/final/tracker.html" />
+    <title>Wild About Kenya | Tracker Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/final.css">
+    <script type="module" src="scripts/final.js"></script>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="branding">
+            <img src="images/logo.png" alt="Website Logo">
+            <span id="page-title">Wild About Kenya</span>
+        </div>
+        <button type="button" id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Parks</a></li>
+                <li><a href="tracker.html" aria-current="page">Wildlife Tracker</a></li>
+
+
+            </ul>
+
+        </nav>
+
+    </header>
+    <main>
+        <h1> Visitor Sightings </h1>
+        <section aria-labelledby="form-heading">
+            <h2 id="form-heading">Submit a Wildlife Sighting</h2>
+            <form id="sightingForm" method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Your Info</legend>
+                    <label for="visitorName">Name:</label>
+                    <input type="text" id="visitorName" name="visitorName" required />
+        
+                    <label for="species">Species:</label>
+                    <input type="text" id="species" name="species" required list="speciesList" />
+                    <datalist id="speciesList">
+                        <option value="Elephant"></option>
+                        <option value="Lion"></option>
+                        <option value="Giraffe"></option>
+                        <option value="Zebra"></option>
+                        <option value="Rhino"></option>
+                        <option value="Buffalo"></option>
+                        <option value="Cheetah"></option>
+                        <option value="Wildbeast"></option>
+        
+        
+                    </datalist>
+        
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" required />
+        
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required />
+        
+                    <label for="notes">Notes:</label>
+                    <textarea id="notes" name="notes" rows="4"></textarea>
+                </fieldset>
+        
+                <button type="button" id="openDialog">Wildlife Sighting</button>
+            </form>
+        </section>
+        <dialog id="confirmationDialog">
+            <h2>Confirm Your Sighting</h2>
+            <ul>
+                <li><strong>Name:</strong> <span id="previewVisitorName">—</span></li>
+                <li><strong>Species:</strong> <span id="previewSpecies">—</span></li>
+                <li><strong>Location:</strong> <span id="previewLocation">—</span></li>
+                <li><strong>Date:</strong> <span id="previewDate">—</span></li>
+                <li><strong>Notes:</strong> <span id="previewNotes">No notes provided.</span></li>
+            </ul>
+            <div id="dialogContent"></div>
+            <button id="cancelPreview">Edit</button>
+            <button id="confirmSubmit">Confirm Sighting</button>
+        </dialog>
+
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <p><strong>Contact Us</strong></p>
+                <p>Email: info@wildaboutkenya.co.ke</p>
+                <p>Phone: +254 700 111222</p>
+                <p>Address: Tom Mboya Street, CBD, Nairobi</p>
+            </div>
+            <div class="social-links">
+                <p><strong>Follow Us</strong></p>
+                <a href="https://yotutube.com" target="_blank" aria-label="YouTube">
+                    <img src="images/youtube.svg" alt="YouTube Icon">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="images/twitter.svg" alt="Twitter Icon">
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn Icon">
+                </a>
+            </div>
+            <div class="footer-meta">
+                <p>© <span id="currentyear"></span> 🐘 Wild About Kenya 🐘</p>
+                <p><a href="references.html" aria-label="References page">📎</a></p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

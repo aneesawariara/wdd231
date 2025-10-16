@@ -82,6 +82,7 @@ h1 {
     color: var(--primary-color);
     text-align: center;
     font-weight: bold;
+    font-size: 3rem;
     font-family: var(--heading-font);
 }
 /*Carousel Track*/
@@ -144,7 +145,7 @@ h1 {
 }
 
 .fact-box, .current-weather,
-.forecast
+.forecast, .sighting-details, .references
 {
     background: var(--bg-color);
     border: 1px solid var(--accent-color2);
@@ -175,6 +176,188 @@ h1 {
     padding: 0.3rem 0;
     margin: 0;
 }
+
+/* info css*/
+
+.park-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid var(--accent-color2);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.park-card:hover {
+    transform: translateY(-4px);
+}
+
+.park-card picture,
+.park-card img {
+    flex: 1 1 100%;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.details {
+    flex: 1 1 100%;
+
+}
+
+.details h2 {
+    margin-top: 0;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2rem;
+    color: var(--accent-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.details a {
+    display: inline-block;
+    color: var(--accent-color1);
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.details a::before {
+    content: "🌿 ";
+}
+
+.details a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+#form-heading, #sighting-details{
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+form {
+
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fdfdfd;
+    transition: border-color 0.3s ease;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+button[type="button"] {
+    border: none;
+    background-color: var(--accent-color2);
+    color: var(--bg-color);
+    font-size: medium;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 600px;
+    margin: 1rem 2% 1rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+button[type="button"]:hover {
+    background-color: var(--accent-color1);
+}
+fieldset {
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+legend {
+    font-family: 'Shadows Into Light', sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    color: var(--secondary-color);
+}
+
+
+
+
+input:required:valid {
+    border-left: 6px solid green;
+    background-color: #fff;
+}
+
+input:required:invalid:focus {
+    border-left: 6px solid red;
+    background-color: #fff;
+}
+
+.sighting-entry {
+    background-color: #fff8dc;
+    border-left: 4px solid var(--accent-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: 75px;
+}
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    color: #333;
+    animation: fadeIn 0.3s ease-out;
+    position: relative;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#confirmSubmit, #cancelPreview {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#confirmSubmit:hover, #cancelPreview:hover{
+    background-color: var(--secondary-color);
+}
+
+#confirmSubmit::before {
+    content: "🐾 ";
+}
+
+#cancelPreview::after {
+    content: " ❌";
+}
+
 /*========= Footer Container ========*/
 .footer-container {
     display: grid;

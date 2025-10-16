@@ -1,4 +1,5 @@
 import { loadWeather, initCarousel, getRandomWildlifeFact } from "./home.mjs";
+import { renderSightingDetails, showLastSighting, setupPreviewDialog } from "./tracker.mjs";
 
 
 //hamburger menu
@@ -29,6 +30,20 @@ document.addEventListener("DOMContentLoaded", () => {
         getRandomWildlifeFact();
     }
 });
+
+// Tracker Page
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.getElementById('confirmationDialog')) {
+        setupPreviewDialog();
+    }
+    
+    renderSightingDetails();     
+    showLastSighting(); 
+    
+    
+});
+
+
 
 
 //date and last modified

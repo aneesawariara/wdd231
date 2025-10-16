@@ -10,8 +10,8 @@
     <!-- Facebook Open Graph Meta -->
     <meta property="og:title" content="Kenya Wildlife Explorer Info" />
     <meta property="og:description" content="Explore local sights and parks in Nairobi." />
-    <meta property="og:image" content="https://aneesawariara.github.io/wdd231/final/images/og-discover.jpg" />
-    <meta property="og:url" content="https://aneesawariara.github.io/wdd231/final/index.html" />
+    <meta property="og:image" content="https://aneesawariara.github.io/wdd231/final/images/og-info.jpg" />
+    <meta property="og:url" content="https://aneesawariara.github.io/wdd231/final/info.html" />
     <title>Wild About Kenya | Info Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,8 +34,8 @@
         <button type="button" id="menu" aria-label="Toggle Menu"></button>
         <nav>
             <ul class="navigation">
-                <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="info.html">Parks</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html" aria-current="page">Parks</a></li>
                 <li><a href="tracker.html">Wildlife Tracker</a></li>
 
 
@@ -45,7 +45,106 @@
 
     </header>
     <main>
+        <h1>Explore the Parks</h1>
+        <section class="park-card">
+            <picture>
+                <source srcset="https://images.unsplash.com/photo-1524685592324-22dc0aa2268c?w=800&auto=format&fit=crop&q=60"
+                    media="(max-width: 600px)">
+                <source srcset="https://images.unsplash.com/photo-1524685592324-22dc0aa2268c?w=1920&auto=format&fit=crop&q=60"
+                    media="(min-width: 601px)">
+                <img src="https://images.unsplash.com/photo-1524685592324-22dc0aa2268c?w=1200&auto=format&fit=crop&q=60"
+                    alt="Elephant grazing in Amboseli National Park" loading="lazy"
+                    style="width: 100%; height: auto; object-fit: cover;">
+            </picture>
         
+            <div class="details">
+                <h2>Amboseli National Park</h2>
+                <p>Known for large elephant herds and stunning views of Mount Kilimanjaro.</p>
+                <ul>
+                    <li><strong>Location:</strong> Kajiado County</li>
+                    <li><strong>Highlights:</strong> Elephants, wetlands, Kilimanjaro views</li>
+                </ul>
+                <p><a href="https://www.kws.go.ke/amboseli-national-park" target="_blank" rel="noopener">Read more on KWS</a>
+                </p>
+            </div>
+        </section>
+        <section class="park-card">
+            <picture>
+                <source srcset="https://images.unsplash.com/photo-1644325535323-62fdfb4f2673?w=800&auto=format&fit=crop&q=60"
+                    media="(max-width: 600px)">
+                <source srcset="https://images.unsplash.com/photo-1644325535323-62fdfb4f2673?w=1920&auto=format&fit=crop&q=60"
+                    media="(min-width: 601px)">
+                <img src="https://images.unsplash.com/photo-1644325535323-62fdfb4f2673?w=1200&auto=format&fit=crop&q=60"
+                    alt="A couple of lions sitting in a field" loading="lazy"
+                    style="width: 100%; height: auto; object-fit: cover;">
+            </picture>
+            <div class="details">
+                <h2>Bisanadi National Reserve</h2>
+                <p>A remote and arid wilderness north of Meru National Park, Bisanadi is home to lions, elephants, cheetahs,
+                    rhinos, buffalos, and over 400 bird species. Its rivers and bushland offer stunning game viewing, boating,
+                    and camping under the stars.</p>
+                <ul>
+                    <li><strong>Location:</strong> Isiolo County, adjacent to Meru National Park</li>
+                    <li><strong>Highlights:</strong> River Tana & Rojewero, big cats, birdwatching, fishing</li>
+                </ul>
+                <p><a href="https://www.kws.go.ke/bisanadi-national-reserve" target="_blank" rel="noopener">Read more on KWS</a>
+                </p>
+            </div>
+        </section>
+        <section class="park-card">
+            <picture>
+                <source
+                    srcset="https://plus.unsplash.com/premium_photo-1661962656908-24102eafa8d4?w=800&auto=format&fit=crop&q=60"
+                    media="(max-width: 600px)">
+                <source
+                    srcset="https://plus.unsplash.com/premium_photo-1661962656908-24102eafa8d4?w=1920&auto=format&fit=crop&q=60"
+                    media="(min-width: 601px)">
+                <img src="https://plus.unsplash.com/premium_photo-1661962656908-24102eafa8d4?w=1200&auto=format&fit=crop&q=60"
+                    alt="Wildbeasts Crossing" loading="lazy" style="width: 100%; height: auto; object-fit: cover;">
+            </picture>
+            <div class="details">
+                <h2>Masai Mara National Reserve</h2>
+                <p>One of Kenya's most iconic parks, Masai Mara is renowned for the Great Migration and abundant wildlife
+                    including lions, cheetahs, and elephants. It borders Tanzania's Serengeti and offers unforgettable safari
+                    experiences.</p>
+                <ul>
+                    <li><strong>Location:</strong> Narok County</li>
+                    <li><strong>Highlights:</strong> Big Five, wildebeest migration, open savannah</li>
+                </ul>
+                <p><a href="https://www.kws.go.ke/masai-mara-national-reserve" target="_blank" rel="noopener">Read more on
+                        KWS</a></p>
+            </div>
+        </section>
+        <section class="park-card">
+            <picture>
+                <source srcset="https://images.unsplash.com/photo-1499845786192-59a0e7a6ca23?w=800&auto=format&fit=crop&q=60"
+                    media="(max-width: 600px)">
+                <source srcset="https://images.unsplash.com/photo-1499845786192-59a0e7a6ca23?w=1920&auto=format&fit=crop&q=60"
+                    media="(min-width: 601px)">
+                <img src="https://images.unsplash.com/photo-1499845786192-59a0e7a6ca23?w=1200&auto=format&fit=crop&q=60"
+                    alt="Elephants walking across Tsavo National Park" loading="lazy"
+                    style="width: 100%; height: auto; object-fit: cover;">
+            </picture>
+        
+            <div class="details">
+                <h2>Tsavo National Park</h2>
+                <p>Kenya's largest protected area, Tsavo is divided into Tsavo East and Tsavo West. Tsavo East features vast
+                    semi-arid plains, the Galana River, and the Yatta Plateau—Africa's longest lava flow. Tsavo West offers
+                    dramatic landscapes, Mzima Springs, and the Ngulia Rhino Sanctuary. The park is famous for its “man-eater”
+                    lions and massive elephant herds.</p>
+                <ul>
+                    <li><strong>Location:</strong> Southeastern Kenya, spanning Taita-Taveta and Kitui Counties</li>
+                    <li><strong>Highlights:</strong> Lava flows, elephants, lions, Mzima Springs, birdlife</li>
+                </ul>
+                <p>
+                    <a href="https://www.kws.go.ke/tsavo-west-national-park" target="_blank" rel="noopener">Read more on KWS</a>
+                    |
+                    <a href="https://en.wikipedia.org/wiki/Tsavo_East_National_Park" target="_blank" rel="noopener">Tsavo East
+                        on Wikipedia</a>
+                </p>
+            </div>
+        </section>
+
 
 
     </main>
